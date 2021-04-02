@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script>
+		function checkpassword(){
+			var password = document.getElementById("passwordbox");
+			var passwordText = password.value;
+			if (passwordText == "pee"){
+				return true;
+			}
+			else{
+				alert("lolno");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<p style="font-size: 50px; color: green;">Welcome!</p>
+	<p>Please enter the password to view the following site.</p>
+	<p>Password: <input id="passwordbox" type="password" name="pee"></p>
+	<a href="Nicholas.html" onclick="return checkpassword()">Submit</a>
+
+</body>
+</html>
